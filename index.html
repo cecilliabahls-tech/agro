@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech Brasil</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #2e7d32, #66bb6a);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background: #1b5e20;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .galeria img {
+            width: 100%;
+            border-radius: 15px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+
+        .dados {
+            background: #e8f5e9;
+            border-left: 6px solid #2e7d32;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AgroTech Brasil</h1>
+        <p>Tecnologia, produção agrícola e inovação no campo</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#dados">Dados</a>
+        <a href="#galeria">Galeria</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>🌱 Sobre o Agro</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Produção</h3>
+                <p>O Brasil é um dos maiores produtores agrícolas do mundo.</p>
+            </div>
+
+            <div class="card">
+                <h3>Tecnologia</h3>
+                <p>Máquinas modernas ajudam na produtividade e sustentabilidade.</p>
+            </div>
+
+            <div class="card">
+                <h3>Sustentabilidade</h3>
+                <p>O agro moderno busca reduzir impactos ambientais.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="dados">
+        <h2>📊 Dados Reais do Agro Brasileiro</h2>
+
+        <div class="dados">
+            <p><strong>Soja:</strong> o Brasil está entre os maiores produtores do mundo.</p>
+        </div>
+
+        <div class="dados">
+            <p><strong>Exportações:</strong> o agronegócio representa grande parte das exportações brasileiras.</p>
+        </div>
+
+        <div class="dados">
+            <p><strong>Tecnologia:</strong> drones e inteligência artificial estão crescendo no campo.</p>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>📸 Galeria Agro</h2>
+
+        <div class="galeria">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200" alt="Plantação">
+
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200" alt="Campo agrícola">
+
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200" alt="Agricultura moderna">
+        </div>
+    </section>
+
+    <footer>
+        <p>Site criado por Ceci 🌾</p>
+    </footer>
+
+</body>
+</html>
